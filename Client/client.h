@@ -4,21 +4,22 @@
 #include "AMClient_global.h"
 #include <QObject>
 
-#include "Events/chatreceiveevent.h"
-#include "Events/chatsendevent.h"
-#include "Events/timeupdateevent.h"
-#include "Events/entityequipmentevent.h"
-#include "Events/spawnpositionevent.h"
-#include "Events/updatehealthevent.h"
-#include "Events/respawnevent.h"
-#include "Events/positionlookevent.h"
-#include "Events/helditemchangeevent.h"
-#include "Events/usebedevent.h"
-#include "Events/animationevent.h"
-#include "Events/playerspawnevent.h"
+#include "Event/joingameevent.h"
+#include "Event/chatreceiveevent.h"
+#include "Event/timeupdateevent.h"
+#include "Event/entityequipmentevent.h"
+#include "Event/spawnpositionevent.h"
+#include "Event/updatehealthevent.h"
+#include "Event/respawnevent.h"
+#include "Event/positionlookevent.h"
+#include "Event/helditemchangeevent.h"
+#include "Event/usebedevent.h"
+#include "Event/animationevent.h"
+#include "Event/playerspawnevent.h"
 
+#include "Event/chatsendevent.h"
 
-#include "Events/serverdisconnectevent.h"
+#include "Event/serverdisconnectevent.h"
 
 
 namespace Client {
@@ -34,6 +35,7 @@ signals:
 
     //Minecraft signals available for use by plugins
     //Inbound
+    void onJoinGame(const Event::JoinGameEvent &event);
     void onChatReceived(const Event::ChatReceiveEvent &event);;
     void onTimeUpdate(const Event::TimeUpdateEvent &event);
     void onEntityEquipment(const Event::EntityEquipmentEvent &event);

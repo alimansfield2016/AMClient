@@ -17,19 +17,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-	Events/helditemchangeevent.cpp \
-	Events/animationevent.cpp \
-    Events/chatreceiveevent.cpp \
-    Events/chatsendevent.cpp \
-    Events/entityequipmentevent.cpp \
-	Events/playerspawnevent.cpp \
-	Events/positionlookevent.cpp \
-	Events/respawnevent.cpp \
-    Events/serverdisconnectevent.cpp \
-	Events/spawnpositionevent.cpp \
-    Events/timeupdateevent.cpp \
-	Events/updatehealthevent.cpp \
-	Events/usebedevent.cpp \
+	Client/Event/helditemchangeevent.cpp \
+	Client/Event/animationevent.cpp \
+	Client/Event/chatreceiveevent.cpp \
+	Client/Event/chatsendevent.cpp \
+	Client/Event/entityequipmentevent.cpp \
+	Client/Event/joingameevent.cpp \
+	Client/Event/playerspawnevent.cpp \
+	Client/Event/positionlookevent.cpp \
+	Client/Event/respawnevent.cpp \
+	Client/Event/serverdisconnectevent.cpp \
+	Client/Event/spawnpositionevent.cpp \
+	Client/Event/timeupdateevent.cpp \
+	Client/Event/updatehealthevent.cpp \
+	Client/Event/usebedevent.cpp \
 	Minecraft/Block/position.cpp \
 	Minecraft/Entity/metadata.cpp \
 	Minecraft/Entity/position.cpp \
@@ -44,19 +45,20 @@ SOURCES += \
 
 HEADERS += \
     AMClient_global.h \
-	Events/animationevent.h \
-	Events/helditemchangeevent.h \
-    Events/chatreceiveevent.h \
-    Events/chatsendevent.h \
-    Events/entityequipmentevent.h \
-	Events/playerspawnevent.h \
-	Events/positionlookevent.h \
-	Events/respawnevent.h \
-    Events/serverdisconnectevent.h \
-	Events/spawnpositionevent.h \
-    Events/timeupdateevent.h \
-	Events/updatehealthevent.h \
-	Events/usebedevent.h \
+	Client/Event/animationevent.h \
+	Client/Event/helditemchangeevent.h \
+	Client/Event/chatreceiveevent.h \
+	Client/Event/chatsendevent.h \
+	Client/Event/entityequipmentevent.h \
+	Client/Event/joingameevent.h \
+	Client/Event/playerspawnevent.h \
+	Client/Event/positionlookevent.h \
+	Client/Event/respawnevent.h \
+	Client/Event/serverdisconnectevent.h \
+	Client/Event/spawnpositionevent.h \
+	Client/Event/timeupdateevent.h \
+	Client/Event/updatehealthevent.h \
+	Client/Event/usebedevent.h \
 	Minecraft/Block/position.h \
 	Minecraft/Entity/metadata.h \
 	Minecraft/Entity/position.h \
